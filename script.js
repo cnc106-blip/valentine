@@ -17,24 +17,33 @@ function yesClicked() {
       <p>Thank you for saying yes ☹️<p>
       <p>You make me the happiest everrr >.< 👭🏽<p>
       <p>I'm SO SO SOOOO lucky to have you🍀<p>
-      <p>I love you always and always and alwaysss ❤️</p>
-      <p>Happy Valentine’s Day my beautiful Krishna baby 🥹💘</p>
+      <p>I promise to love you forever and ever and everrrr ❤️🫵♾️‼️</p>
+      <p>Happy Valentine’s Day to my beautiful perfectest Krishna baby 🥹💘</p>
     </div>
   `;
 }
 
-// floating hearts generator
+// floating emojis generator
+const emojis = ["👭🏽", "💖", "❤️", "😚", "💋", "✨", "💝", "👩🏽‍❤️‍💋‍👩🏽", "🍀", "🫂"]; //add
+
 setInterval(() => {
-  const heart = document.createElement("div");
-  heart.classList.add("heart");
-  heart.innerHTML = "💗";
+  const emoji = document.createElement("div");
+  emoji.classList.add("heart"); // uses CSS for float animation
 
-  heart.style.left = Math.random() * window.innerWidth + "px";
-  heart.style.bottom = "0px";
+  // pick a random emoji
+  const randomIndex = Math.floor(Math.random() * emojis.length);
+  emoji.innerHTML = emojis[randomIndex];
 
-  document.body.appendChild(heart);
+  // random horizontal position
+  emoji.style.left = Math.random() * window.innerWidth + "px";
+  emoji.style.bottom = "0px";
+
+  // random size (optional, cute effect)
+  emoji.style.fontSize = (Math.random() * 30 + 15) + "px"; // 15px to 45px
+
+  document.body.appendChild(emoji);
 
   setTimeout(() => {
-    heart.remove();
+    emoji.remove();
   }, 4000);
 }, 300);
