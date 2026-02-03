@@ -14,7 +14,7 @@ function yesClicked() {
   document.body.innerHTML = `
     <div class="container">
       <h1>YAYYYYY 💖🥰</h1>
-      <p>You just made me ridiculously happy.</p>
+      <p>I love you always and always and alwaysss.</p>
       <p>Happy Valentine’s Day 💘</p>
     </div>
   `;
