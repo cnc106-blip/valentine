@@ -13,10 +13,12 @@ noBtn.addEventListener("mouseover", () => {
 function yesClicked() {
   document.body.innerHTML = `
     <div class="container">
-      <h1>YAYYYYY 💖😚</h1>
-      <p>You make me the happiest everrr >.<p>
+      <h1>YAYYYYY YOU PICKED CORRECTLYYY💖😚</h1>
+      <p>Thank you for saying yes ☹️<p>
+      <p>You make me the happiest everrr >.< 👭🏽<p>
+      <p>I'm SO SO SOOOO lucky to have you🍀<p>
       <p>I love you always and always and alwaysss ❤️</p>
-      <p>Happy Valentine’s Day Krishna baby 🥹💘</p>
+      <p>Happy Valentine’s Day my beautiful Krishna baby 🥹💘</p>
     </div>
   `;
 }
